@@ -1,28 +1,24 @@
-from setuptools import setup, find_packages
-import codecs
-import os
-
-VERSION = '0.0.1'
-DESCRIPTION = 'Search Utility'
-LONG_DESCRIPTION = 'A package that creates an abstractive layer for common python tasks.'
-
-# Setting up
+from distutils.core import setup
 setup(
-    name="sutil",
-    version=VERSION,
-    author="Damoy Skeene",
-    author_email="<damoydskeene@gmail.com>",
-    description=DESCRIPTION,
-    long_description_content_type="text/markdown",
-    long_description=LONG_DESCRIPTION,
-    packages=find_packages(),
-    keywords=['python', 'utility', 'string', 'easy', 'beta', 'fast'],
-    classifiers=[
-        "Development Status :: 1 - Planning",
-        "Intended Audience :: Developers",
-        "Programming Language :: Python :: 3",
-        "Operating System :: Unix",
-        "Operating System :: MacOS :: MacOS X",
-        "Operating System :: Microsoft :: Windows",
-    ]
+  name = 'sutil',         
+  packages = ['sutil'],   
+  version = '0.1',      
+  license='MIT',        
+  description = 'Sutil provides an abstractive layer for common python tasks.',   
+  author = 'Damoy Skeene',                   
+  author_email = 'damoydskeene@gmail.com',     
+  url = 'https://github.com/damoyskeene/sutil',   
+  download_url = 'https://github.com/damoyskeene/sutil/archive/refs/tags/0.1.tar.gz',    
+  keywords = ['search', 'data', 'manipulation'],   
+  install_requires=[],
+  classifiers=[
+    'Development Status :: 3 - Alpha',      
+    'Intended Audience :: Developers',   
+    'Topic :: Software Development :: Build Tools',
+    'License :: OSI Approved :: MIT License',   
+    'Programming Language :: Python :: 3',      
+    'Programming Language :: Python :: 3.4',
+    'Programming Language :: Python :: 3.5',
+    'Programming Language :: Python :: 3.6',
+  ],
 )
